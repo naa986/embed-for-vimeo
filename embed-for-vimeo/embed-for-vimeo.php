@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Embed for Vimeo
-Version: 1.0.2
+Version: 1.0.3
 Plugin URI: https://noorsplugin.com/embed-for-vimeo-wordpress-plugin/
 Author: naa986
 Author URI: https://noorsplugin.com/
@@ -18,7 +18,7 @@ if(!class_exists('EMBED_FOR_VIMEO'))
 {
     class EMBED_FOR_VIMEO
     {
-        var $plugin_version = '1.0.2';
+        var $plugin_version = '1.0.3';
         var $plugin_url;
         var $plugin_path;
         function __construct()
@@ -102,6 +102,13 @@ function embedforvimeo_process_video($html, $url, $attr, $post_ID)
     if(isset($data['cc']) && $data['cc']=="false"){
         if(strpos($src, 'cc') === false){
             $src = add_query_arg('cc', 'false', $src);
+            $html = preg_replace($pattern, 'src="'.$src.'"', $html);
+        }
+    }
+    //
+    if(isset($data['title']) && $data['title']=="false"){
+        if(strpos($src, 'title') === false){
+            $src = add_query_arg('title', 'false', $src);
             $html = preg_replace($pattern, 'src="'.$src.'"', $html);
         }
     }

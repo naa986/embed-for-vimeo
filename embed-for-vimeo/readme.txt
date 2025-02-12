@@ -5,17 +5,34 @@ Tags: vimeo, video, embed, iframe, responsive
 Requires at least: 3.0
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Embed Vimeo videos in WordPress with arguments.
+Embed Vimeo videos in WordPress beautifully. Embed video with a URL or shortcode and customize the Vimeo player using this Vimeo embed plugin.
 
 == Description ==
 
-[Embed for Vimeo](https://noorsplugin.com/embed-for-vimeo-wordpress-plugin/) plugin allows you to customize your Vimeo videos in WordPress. When this plugin is active, you can customize embedded Vimeo videos with arguments.
+[Embed for Vimeo](https://noorsplugin.com/embed-for-vimeo-wordpress-plugin/) plugin is the easiest way to embed Vimeo videos in WordPress. This plugin extends the default Vimeo embed with advanced player parameters.
 
-=== How to Use the Plugin ===
+Unlike other Vimeo plugins, It doesn't replace your on-page video embed code with JavaScript/HTML code. Loading a video with JavaScript doesn't provide any video SEO benefit as a search engine crawler will only see some code instead of the actual video object. 
+
+Embed for Vimeo is easy to use because there is no setting to configure. It uses the oEmbed API so your videos will be responsive and provide all the benefits that core WordPress Vimeo embed has to offer. Vimeo videos on your website will continue to work even if you choose to deactivate the plugin.
+
+=== Features ===
+
+* Responsive and mobile friendly.
+* Proper Vimeo video embed with no additional JavaScript code.
+* No setting to configure. Install, activate and start using it.
+* No Vimeo API key needed.
+* Embed Vimeo videos in WordPress with the Vimeo block.
+* Enable/Disable airplay.
+* Enable/Disable autopause.
+* Enable/Disable cc (closed captions).
+* Enable/Disable byline (author name).
+* Enable/Disable video title display.
+
+=== How to Use Embed for Vimeo ===
 
 Create a new post/page and add a Vimeo block. Copy and paste the Vimeo video URL into it. For example:
 
@@ -38,6 +55,12 @@ This argument is enabled by default which pauses the current video when another 
 If you do not want to display the author name in the player, add "byline=false" to your Vimeo URL.
 
 `https&#58;//vimeo.com/1084536?byline=false`
+
+**title**
+
+If you do not want to display the video title in the player, add "title=false" to your Vimeo URL.
+
+`https&#58;//vimeo.com/1084536?title=false`
 
 **cc**
 
@@ -80,6 +103,9 @@ Yes.
 none
 
 == Changelog ==
+
+= 1.0.3 =
+* Added an option to disable video title display
 
 = 1.0.2 =
 * Added options to control closed captions
