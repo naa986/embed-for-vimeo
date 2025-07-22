@@ -3,9 +3,9 @@ Contributors: naa986
 Donate link: https://noorsplugin.com/
 Tags: vimeo, video, embed, iframe, responsive
 Requires at least: 3.0
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,10 @@ You can add multiple arguments to your Vimeo URL with &.
 
 For a single argument ? needs to be used.
 
+=== Embed for Vimeo Add-ons ===
+
+* [Advanced Parameters](https://noorsplugin.com/embed-for-vimeo-wordpress-plugin/)
+
 === Documentation ===
 
 For documentation please visit this [Vimeo plugin page](https://noorsplugin.com/embed-for-vimeo-wordpress-plugin/)
@@ -103,6 +107,9 @@ Yes.
 none
 
 == Changelog ==
+
+= 1.0.4 =
+* Added support for advanced parameters
 
 = 1.0.3 =
 * Added an option to disable video title display
